@@ -258,3 +258,160 @@ body {
     opacity: 1;
     right: 100%;
 }
+
+/* SOBRE MI */
+
+.content__about {
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    padding: 6rem;
+    padding-right: 3rem;
+    overflow: auto;
+}
+
+.about__header {
+    display: inline-block;
+    margin-bottom: 4.5rem;
+}
+
+.about__title {
+    font-size: 3.2rem;
+    position: relative;
+}
+
+.about__title::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-blue), var(--color-blue) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.title__color {
+    color: var(--color-blue);
+}
+
+/* INFORMACION PERSONAL */
+.about__personal-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personal-info__bio {
+    flex-basis: 56%;
+}
+
+.personal-info__description {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.personal-info__data {
+    flex-basis: 44%;
+    padding: 0 1.5rem;
+}
+
+.personal-info__option {
+    margin-bottom: 1rem;
+}
+
+.personal-info__title {
+    margin-right: 0.5rem;
+    color: var(--color-blue);
+    font-weight: 600;
+}
+
+/* SERVICES Y REVIEWS */
+.about__services,
+.about_reviews {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header,
+.reviews__header {
+    display: inline-block;
+    padding-right: 1.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.services__title,
+.reviews__title {
+    font-size: 2.1rem;
+}
+
+.services__title::after,
+.reviews__title::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-blue), var(--color-blue) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+}
+
+/* SERVICES */
+.services__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services__service {
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.service_real-icon {
+    color: var(--color-blue);
+    font-size: 3.8rem;
+}
+
+.service__title {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.services__description {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* REVIEWS */
+.reviews__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reviews__review {
+    flex-basis: calc(50% - 2.5rem);
+    border: 2px solid var(--color-bluelight);
+    border-radius: 2rem;
+    padding-top: 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+.review__image-container {
+    width: 100%;
+}
+
+.review__image {
+    
+}
