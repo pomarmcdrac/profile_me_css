@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/scroll.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/loader.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <script src="assets/js/map.js" defer></script>
+
     <title>Portafolio - Omar Morales</title>
 </head>
 <body>
@@ -158,12 +163,12 @@
 
                     <section class="contact__form-box">
 
-                        <div class="contact__map">
-                            <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6188115940968!2d-103.4197149885281!3d20.644388700788486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac3a741fed3d%3A0x11f1fb8ef570a3ab!2sAmado%20Nervo%2C%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1696980674341!5m2!1ses-419!2smx" ></iframe> -->
+                        <div class="contact__map" id="load-iframe-map">
+                            <span class="loader"></span>
                         </div>
 
                         <header class="contact__form-header">
-                            <h3 class="form-header__subtitle">¿Cómo puedo <span class="title__color">ayudarte?</span></h3>
+                            <h3 class="form-header__title">¿Cómo puedo <span class="title__color">ayudarte?</span></h3>
                         </header>
 
                         <form class="contact__form">
@@ -189,15 +194,16 @@
                                 </section>
 
                                 <section class="form__right">
-                                    <div class="form__group">
+                                    <div class="form__group form__group--textarea">
                                         <textarea class="form__input form__input--textarea" name="message" required placeholder="Mensaje"></textarea>
                                         <label for="message" class="form__label">Mensaje</label>
                                     </div>
                                 </section>
-
-                                <input type="submit" class="form__button" value="Enviar mesaje"/>
-
+ 
                             </div>
+
+                            <input type="submit" class="form__button" value="Enviar mesaje"/>
+                        
                         </form>
 
                     </section>
